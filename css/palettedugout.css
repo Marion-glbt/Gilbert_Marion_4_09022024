@@ -1,0 +1,178 @@
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /*** Général ***/
+
+    * {
+        font-family: "Roboto", sans-serif;
+    }
+
+    :root {
+        --white: white;
+    }
+
+    body {
+        margin: 0px;
+        background-color: #f6f6f6;
+    }
+
+    h1 {
+        padding: 32px 17px 0px 17px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+
+    h2 {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        padding-left: 13px;
+        padding-top: 40px;
+        font-family: roboto;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    /****** Header ***********/
+
+    header {
+        padding: 14px 89px 13px 17px;
+    }
+
+    .headerlogo {
+        display: flex;
+        align-items: center;
+    }
+
+    .headerimg {
+        padding: 0px 19px 0px 0px;
+        height: 36px;
+        width: 162px;
+        margin-left: 42px;
+    }
+
+    .entreescontent {
+        color: var(--noir);
+        background-color: #f6f6f6;
+        height: 72px;
+        border-radius: 20px;
+        border: none;
+        font-weight: 700;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        margin: 12px 20px 25px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+        height: 100%;
+    }
+
+    .imagerestau {
+        height: 265px;
+        width: 100%;
+    }
+
+
+    /*** Menu ***/
+
+    .card {
+        background-color: #f6f6f6;
+        border-radius: 40px 40px 0px 0px;
+        border: none;
+        height: 100%;
+        /**
+        position: absolute;
+        bottom: -300px;
+        z-index: 10;
+        **/
+    }
+
+    .ligneh2 {
+        border-bottom: 5px solid #99e2d0;
+        width: 13%;
+        margin-left: 13px;
+    }
+
+    .plattitre {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-bottom: 5px;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .platcomplément {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .platprix {
+        display: flex;
+        justify-content: flex-end;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        justify-content: flex-end;
+    }
+
+    .platprix2 {
+        position: absolute;
+        bottom: 10px;
+        right: 35px;
+        width: 60px;
+        height: 110px;
+    }
+
+    .buttonexplorez {
+        border-radius: 25px;
+        padding: 15px 16px;
+        height: 20px;
+        width: 186px;
+        background: linear-gradient(to top, #9356dc, #ff79da);
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+
+    .buttonexplorezbox {
+        display: flex;
+        justify-content: center;
+        background-color: #f6f6f6;
+        padding: 40px 0px 40px 0px;
+    }
+
+    /*** Footer ***/
+
+    footer {
+        background-color: #353535;
+        color: #ffffff;
+        padding: 25px;
+    }
+
+    h4 {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+
+    .footer {
+        gap: 7px;
+        display: grid;
+        margin-top: 16px;
+    }
+
+    .imagefooter {
+        height: 27px;
+        filter: invert(1);
+    }
+
+    footer div h4 i {
+        margin-right: 0px;
+    }
+}
