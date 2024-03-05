@@ -1,0 +1,56 @@
+/* style.css */
+.loader-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Assurez-vous qu'il est au-dessus de tout autre contenu */
+}
+
+/* Style de base pour le loader */
+.loader {
+    border: 16px solid #f3f3f3; /* Couleur de fond */
+    border-top: 16px solid #99e2d0; /* Couleur du loader */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear 1, fadeOut 2s ease 2s forwards;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Animation du spinner */
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loader-container {
+    background-color: white;
+    animation: fadeOut 2s ease 2s forwards;
+}
