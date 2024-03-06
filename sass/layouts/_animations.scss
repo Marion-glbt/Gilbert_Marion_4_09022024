@@ -26,16 +26,39 @@
     width: 60px;
     align-items: center;
     right: 0px;
+    top: 0px;
 }
 
-.hidden-checkbox {
+.block {
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#section1 {
+    animation-delay: 0.5s;
+}
+#section2 {
+    animation-delay: 1.5s;
+}
+#section3 {
+    animation-delay: 2.5s;
+}
+
+.hidden-icon {
     display: none;
 }
 
-.icone {
-    display: none;
-}
-
-.hidden-checkbox:checked + .icone {
-    display: block;
+#toggle-checkbox:checked + .hidden-icon {
+    display: inline;
 }
