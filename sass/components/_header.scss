@@ -2,42 +2,27 @@
 
 header {
     padding: 14px 89px 13px 89px;
-}
-
-.headerlogo {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.fleche {
-    position: absolute;
-    left: 40px;
-}
-
-.headerimg {
-    padding: 0px 19px 0px 16px;
-    height: 36px;
-    width: 162px;
-}
-
-.ville {
-    background-color: #eaeaea;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
+    .fleche {
+        position: absolute;
+        left: 40px;
+        color: black;
+    }
+    img {
+        padding: 0px 19px 0px 16px;
+        height: 36px;
+        width: 162px;
+    }
 }
 
-.lieu {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-left: 17px;
-    font-weight: 500;
-    font-size: 16px;
-}
-
+/* Medium devices (desktop, less/equal than 1024px) */
 @media (min-width: 1024px) {
+    .headerombre {
+        box-shadow: 0px 0px 0px 0px;
+    }
 }

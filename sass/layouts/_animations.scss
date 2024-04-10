@@ -62,3 +62,53 @@
 #toggle-checkbox:checked + .hidden-icon {
     display: inline;
 }
+
+.fa-heart:hover {
+    cursor: pointer;
+    font-weight: bold;
+    animation: pulse 1s forwards;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to top, #ff79da 0%, #9356dc 100%, #ff79da 100%);
+    background-size: 100% 0%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+@keyframes pulse {
+    from {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 100% 0%;
+    }
+    to {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 100% 100%;
+    }
+}
+
+.heart {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.heart-full {
+    display: none;
+}
+
+@for $i from 1 through 4 {
+    #heart-checkbox-#{$i}:checked + .fa-heart {
+        cursor: pointer;
+        font-weight: bold;
+        animation: pulse 1s forwards;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(to top, #ff79da 0%, #9356dc 100%, #ff79da 100%);
+        background-size: 100% 0%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+}

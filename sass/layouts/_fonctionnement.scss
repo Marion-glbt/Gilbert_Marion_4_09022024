@@ -1,102 +1,51 @@
-/****** Haut page ***********/
-
-.h1menu {
-    text-align: center;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    padding: 39px 58px 0px 42px;
-    font-size: 24px;
-    font-family: "Roboto";
-    font-weight: 700;
-}
-
-.h2menu {
-    text-align: center;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    padding: 0px 26px 0px 34px;
-    font-weight: 300;
-    font-size: 18px;
-    font-family: "Roboto";
-    margin-top: 15px;
-}
-
-.buttonexplorez {
-    border-radius: 25px;
-    padding: 15px 16px;
-    height: 20px;
-    width: 186px;
-    background: linear-gradient(to top, #9356dc, #ff79da);
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    font-weight: 500;
-    transition: filter 0.3s;
-    box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.2);
-}
-
-.buttonexplorezbox {
-    display: flex;
-    justify-content: center;
-    background-color: #f6f6f6;
-    padding: 27px 75px 57px 82px;
-    font-family: "Roboto";
-    font-weight: 500;
-}
-
-.buttonexplorez:hover {
-    filter: brightness(120%); /* Augmente la luminosité, rendant le bouton plus clair */
-}
-
 .sectionfonctionnement {
     padding-bottom: 66px;
     background-color: #ffffff;
-}
-
-.fonctionnementetrestau {
-    padding: 48px 80px 26px 20px;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    font-size: 28px;
-    font-family: "Roboto";
-    font-weight: 700;
-}
-
-.fonctionnementcontent {
-    color: var(--noir);
-    background-color: #f6f6f6;
-    height: 72px;
-    border-radius: 20px;
-    border: none;
-    font-weight: 700;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin: 0px 20px 25px 32px;
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 38px;
-}
-
-.iconegris {
-    font-weight: 900;
-    color: #7e7e7e;
-    font-size: 19px;
-    margin-right: 20px;
-}
-
-.iconeviolet {
-    font-weight: 900;
-    color: #9356dc;
-    font-size: 19px;
-    margin-right: 20px;
-}
-
-.couleurarriereplan {
-    background-color: #f6f6f6;
+    .fonctionnementetrestau {
+        padding: 48px 80px 26px 20px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        font-size: 28px;
+        font-family: "Roboto";
+        font-weight: 700;
+    }
+    .grillefonctionnement {
+        display: flex;
+        .fonctionnementcontent {
+            // color: var(--noir);
+            background-color: #f6f6f6;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 16px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            .icon-round {
+                width: 30px;
+                height: 24px;
+                background-color: #9356dc;
+                border-radius: 50%;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                position: absolute;
+                left: 20px;
+            }
+            .iconegris {
+                font-weight: 900;
+                color: #7e7e7e;
+                font-size: 19px;
+                margin-left: 40px;
+            }
+            .iconeviolet {
+                font-weight: 900;
+                color: #9356dc;
+                font-size: 19px;
+                margin-left: 40px;
+            }
+        }
+    }
 }

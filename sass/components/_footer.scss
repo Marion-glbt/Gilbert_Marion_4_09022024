@@ -4,6 +4,11 @@ footer {
     background-color: #353535;
     color: #ffffff;
     padding: 25px;
+    .imagefooter {
+        height: 20px;
+        filter: invert(1);
+        margin-bottom: 16px;
+    }
 }
 
 h4 {
@@ -41,5 +46,21 @@ footer div h4 i {
     .imagedroite {
         display: flex;
         justify-content: flex-end;
+    }
+}
+
+/* Medium devices (desktop, less/equal than 1024px) */
+@media (min-width: 1024px) {
+    .footer {
+        position: relative;
+        right: 170px;
+    }
+
+    .imagefooter {
+        height: 20px;
+        filter: invert(1);
+        margin-bottom: 16px;
+        position: absolute;
+        top: 1725px;
     }
 }
